@@ -66,7 +66,7 @@ $('.skipbutton').on('click', function() {
 
 setTimeout(function() {
   $(window).scroll(function () {
-    if ($(this).scrollTop() > 350) {
+    if ($(this).scrollTop() > 300) {
       $('#kiryukai').fadeIn(2500);
       $('#copyright').fadeIn(2500);
     }
