@@ -1,0 +1,260 @@
+.ja_t {
+  margin-top: 50px;
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+h2 {
+  text-align: center;
+}
+
+
+#menu {
+  height: 60px;
+  background-color: 202020;
+  border-bottom: solid 4px #303030;
+}
+
+#menubutton {
+  cursor: pointer;
+  background-color: transparent;
+  border: none;
+  outline: none;
+  color: white;
+  margin-left: 15px;
+}
+
+#menubutton p {
+  margin: 0;
+  line-height: 60px;
+}
+
+.T {
+  margin: 20px auto 0 auto;
+  background-color: #1565c0;
+  width: 95%;
+  border-radius: 8px;
+}
+
+.T div{
+  margin: 0;
+}
+
+#Tsubo {
+  height: 65px;
+}
+
+.margin {
+  height: 1px;
+  margin: 0;
+}
+
+.en {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.ja {
+  margin-top: 20px;
+  margin-bottom: 0;
+}
+
+.ja_t {
+  margin-bottom: 0;
+}
+
+.bord {
+  margin-top: 40px;
+  margin-left: 20%;
+  width: 60%;
+  background-color: #181818;
+  border: solid 4px #303030;
+}
+
+.logo {
+  width: 50px;
+  margin: 0 0 0 20px;
+}
+
+.Text {
+  margin: 0 auto;
+  border-bottom-left-radius: 8px;
+  border-bottom-right-radius: 8px;
+  height: 30px;
+  width: 95%;
+}
+
+.Text p {
+  margin-top: 0;
+  margin-left: 15px;
+  line-height: 30px;
+}
+
+.Userbox {
+  margin-top: 10px;
+}
+
+.User {
+  height: 35px;
+  width: 95%;
+  text-align: left;
+  display: block;
+  margin: 0 auto 0 auto;
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+}
+
+.Username {
+  margin-top: 0;
+}
+
+.TL p {
+  line-height: 35px;
+  margin-left: 15px;
+  margin-bottom: 25px;
+}
+
+hr {
+  margin: 0;
+}
+
+.TL {
+  text-decoration: none;
+  color: black;
+}
+
+.button {
+  background-color: #505050;
+  width: 280px;
+  z-index: 9999;
+  margin-left: 15px;
+  position: absolute;
+}
+
+.button button {
+  cursor: pointer;
+  padding: 5px;
+  height: 50px;
+  width: 100%;
+  background-color: transparent;
+  color: white;
+  border: none;
+  outline: none;
+}
+
+#button_ja {
+  margin-top: 5px;
+  background-color: #505050;
+}
+
+#button_en {
+  background-color: #505050;
+}
+
+#button_all {
+  margin-bottom: 5px;
+  background-color: #505050;
+}
+
+#button_ja:hover {
+  background-color: #707070;
+}
+
+#button_en:hover {
+  background-color: #707070;
+}
+
+#button_all:hover {
+  background-color: #707070;
+}
+
+.skipbutton {
+  opacity: 50%;
+  cursor: pointer;
+  position:absolute;
+  top:0%;
+  right:0%;
+  border: none;
+  outline: none;
+  background: transparent;
+}
+
+.lightblue_t {
+  background-color: #00b8d4;
+}
+
+.green_t {
+  background-color: #00bfa5;
+}
+
+.yellow_t {
+  background-color: #ffb300;
+}
+
+.orange_t {
+  background-color: #e65100;
+}
+
+.purple_t {
+  background-color: #c2185b;
+}
+
+.red_t {
+  background-color: #d00;
+  color: white:
+}
+
+.lightblue_b {
+  background-color: #00e5ff;
+}
+
+.green_b {
+  background-color: #1de9b6;
+}
+
+.yellow_b {
+  background-color: #ffca28;
+}
+
+.orange_b {
+  background-color: #f57c00;
+}
+
+.purple_b {
+  background-color: #e91e63;
+}
+
+.red_b {
+  background-color: #e62117;
+}
+
+.tw {
+  color: white;
+}
+
+#kiryukai {
+  margin-bottom: 0px;
+  text-align: center;
+
+}
+
+#copyright {
+  text-align: center;
+  margin:  0 auto;
+  width: 200px;
+  height: 230px;
+}
+
+#a {
+  float: left;
+}
+
+#c {
+  float: right;
+}
+
+#k {
+  float: left;
+  margin-top: 0;
+  margin-left: 5;
+}
