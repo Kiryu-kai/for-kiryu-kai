@@ -64,9 +64,11 @@ $('.skipbutton').on('click', function() {
   $('.skipbutton').remove()
 })
 
-$(window).scroll(function () {
-  if ($(this).scrollTop() > 100) {
-    $('#kiryukai').fadeIn(2500);
-    $('#copyright').fadeIn(2500);
-  }
-});
+setTimeout(function() {
+  $(window).scroll(function () {
+    if ($(this).scrollTop() > 350) {
+      $('#kiryukai').fadeIn(2500);
+      $('#copyright').fadeIn(2500);
+    }
+  });
+},14000)
