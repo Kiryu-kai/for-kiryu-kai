@@ -6,11 +6,12 @@
 
 h2 {
   text-align: center;
+  font-size: 110%;
 }
 
 @media only screen and (max-width: 1000px) {
   #header {
-    font-size: 120%;
+    font-size: 130%;
   }
 }
 
