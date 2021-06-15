@@ -8,6 +8,18 @@ h2 {
   text-align: center;
 }
 
+@media only screen and (max-width: 1000px) {
+  #header {
+    font-size: 130%;
+  }
+}
+
+@media only screen and (max-width: 1000px) {
+  #ind {
+    font-size: 20px;
+  }
+}
+
 
 #menu {
   height: 60px;
@@ -71,6 +83,13 @@ h2 {
   border: solid 4px #303030;
 }
 
+@media only screen and (max-width: 1000px) {
+  .bord {
+    margin-left: 10%;
+    width: 80%;
+  }
+}
+
 .logo {
   width: 50px;
   margin: 0 0 0 20px;
@@ -88,6 +107,103 @@ h2 {
   margin-top: 0;
   margin-left: 15px;
   line-height: 30px;
+}
+
+.text_2 {
+  height: 60px;
+}
+
+@media only screen and (max-width: 1000px) {
+  .text_2 {
+    height: 125px;
+  }
+}
+
+@media only screen and (max-width: 1000px) {
+  .text_1-5 {
+    height: 95px;
+  }
+}
+
+.text_3 {
+  height: 90px;
+}
+
+@media only screen and (max-width: 1000px) {
+  .text_3 {
+    height: 162px;
+  }
+}
+
+.text_4 {
+  height: 120px;
+}
+
+@media only screen and (max-width: 1000px) {
+  .text_4 {
+    height: 216px;
+  }
+}
+
+.text_5 {
+  height: 150px;
+}
+
+@media only screen and (max-width: 1000px) {
+  .text_5 {
+    height: 270px;
+  }
+}
+
+.text_6 {
+  height: 180px;
+}
+
+@media only screen and (max-width: 1000px) {
+  .text_6 {
+    height: 324px;
+  }
+
+}
+
+.text_7 {
+  height: 210px;
+}
+
+@media only screen and (max-width: 1000px) {
+  .text_7 {
+    height: 378px;
+  }
+}
+
+.text_8 {
+  height: 240px;
+}
+
+@media only screen and (max-width: 1000px) {
+  .text_8 {
+    height: 432px;
+  }
+}
+
+.text_9 {
+  height: 270px;
+}
+
+@media only screen and (max-width: 1000px) {
+  .text_9 {
+    height: 486px;
+  }
+}
+
+.text_10 {
+  height: 300px;
+}
+
+@media only screen and (max-width: 1000px) {
+  .text_10 {
+    height: 540px;
+  }
 }
 
 .Userbox {
@@ -235,7 +351,6 @@ hr {
 #kiryukai {
   margin-bottom: 0px;
   text-align: center;
-
 }
 
 #copyright {
