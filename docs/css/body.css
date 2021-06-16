@@ -9,6 +9,7 @@ h2 {
 }
 
 @media only screen and (max-width: 1000px) {
+  #header p,
   h2 {
     font-size: 110%;
   }
@@ -24,6 +25,17 @@ h2 {
   #ind {
     font-size: 20px;
   }
+}
+
+
+#header p {
+  font-weight: bold;
+  text-align: center;
+}
+
+
+#footer h2 {
+  font-size: 200%;
 }
 
 
