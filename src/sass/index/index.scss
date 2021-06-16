@@ -1,3 +1,4 @@
+@use "../utils/foundation";
 @use "../utils/mixin" as *;
 @use "./component/fadein";
 @use "./component/filter";
@@ -7,11 +8,6 @@
   margin-bottom: 30px;
   text-align: center;
 }
-
-h2 {
-  text-align: center;
-}
-
 
 @media only screen and (max-width: 1000px) {
   #header p,
@@ -43,10 +39,13 @@ h2 {
   font-size: 200%;
 }
 
+.chat {
+  padding: 0 20px;
+}
+
 .T {
   margin: 20px auto 15px auto;
   background-color: #1565c0;
-  width: 95%;
   border-radius: 8px;
 }
 
@@ -97,7 +96,6 @@ h2 {
   border-bottom-left-radius: 8px;
   border-bottom-right-radius: 8px;
   height: 30px;
-  width: 95%;
   height:auto;
 }
 
@@ -110,7 +108,6 @@ h2 {
 
 .User {
   height: 35px;
-  width: 95%;
   text-align: left;
   display: block;
   margin: 0 auto 0 auto;
@@ -126,10 +123,6 @@ h2 {
   line-height: 35px;
   margin-left: 15px;
   margin-bottom: 25px;
-}
-
-hr {
-  margin: 0;
 }
 
 .TL {
