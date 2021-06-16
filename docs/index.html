@@ -1,4 +1,4 @@
-<html lang="ja" dir="ltr">
+<html lang="ja" dir="ltr" class="no-js">
   <head prefix="og: http://ogp.me/ns">
     <meta charset="utf-8">
     <title>桐生会　感謝を伝える板</title>
@@ -11,31 +11,33 @@
     <meta name="twitter:card" content="summary_large_image" />
     <meta name="twitter:site" content="@Choco2807" />
     <link rel="stylesheet" href="./css/body.css?ver=0.2">
-    <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+    <script>document.documentElement.classList.remove('no-js')</script>
+    <script src="https://code.jquery.com/jquery-3.6.0.js" defer></script>
+    <script src="./js/index.js" defer></script>
   </head>
 
   <body>
     <header id="header">
       <div id="h_1">
-        <h1 class="ja_t">桐生会から桐生会へ</h1>
+        <h1 class="ja_t fadein">桐生会から桐生会へ</h1>
 
-        <button class="skipbutton">アニメーションをスキップ</button>
+        <button class="skipbutton">アニメーションをスキップ（Skip）</button>
 
-        <p class="en">From Kiryu-Kai, To Kiryu-Kai</p>
+        <p class="en fadein">From Kiryu-Kai, To Kiryu-Kai</p>
       </div>
 
-      <div id="h_2">
+      <div class="fadein">
         <p class="ja">～ホロライブ4期生 "桐生ココ" を推した者同士、感謝を込めて～</p>
         <p class="en"></p>
       </div>
 
-      <div id="h_3">
+      <div class="fadein">
         <p class="ja">これまでも、これからも　同じ桐生会の仲間として</p>
         <p class="en"></p>
       </div>
     </header>
 
-    <main id="ind">
+    <main id="ind" class="fadein">
       <div class="Bord">
         <div id="menu">
           <button id="menubutton">
@@ -196,7 +198,7 @@
       </div>
     </main>
 
-    <footer id="footer">
+    <footer id="footer" class="fadein">
       <h2 id="kiryukai">桐生会は不滅なり</h2>
 
       <div id="copyright">
@@ -208,7 +210,5 @@
         <a class="TL" target="_blank" rel="noopener noreferrer" href="https://twitter.com/Lattesmc">Lats</a></p>
       </div>
     </footer>
-
-    <script src="./js/index.js"></script>
   </body>
 </html>
