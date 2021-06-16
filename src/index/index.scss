@@ -1,4 +1,3 @@
-@charset "UTF-8";
 .ja_t {
   margin-top: 50px;
   margin-bottom: 30px;
@@ -22,28 +21,34 @@ html:not(.no-js) .fadein.visible {
 
 @media only screen and (max-width: 1000px) {
   #header p,
-h2 {
+  h2 {
     font-size: 110%;
   }
 }
+
 @media only screen and (max-width: 1000px) {
   #header {
     font-size: 130%;
   }
 }
+
 @media only screen and (max-width: 1000px) {
   #ind {
     font-size: 20px;
   }
 }
+
+
 #header p {
   font-weight: bold;
   text-align: center;
 }
 
+
 #footer h2 {
   font-size: 200%;
 }
+
 
 /* =============================================================================
  * フィルターUI
@@ -91,6 +96,11 @@ h2 {
     font-size: 20px;
   }
 }
+
+
+
+
+
 .T {
   margin: 20px auto 15px auto;
   background-color: #1565c0;
@@ -98,7 +108,7 @@ h2 {
   border-radius: 8px;
 }
 
-.T div {
+.T div{
   margin: 0;
 }
 
@@ -134,6 +144,7 @@ h2 {
     width: 80%;
   }
 }
+
 .logo {
   width: 50px;
   margin: 0 0 0 20px;
@@ -145,7 +156,7 @@ h2 {
   border-bottom-right-radius: 8px;
   height: 30px;
   width: 95%;
-  height: auto;
+  height:auto;
 }
 
 .Text p {
@@ -184,6 +195,7 @@ hr {
   color: black;
 }
 
+
 #button_ja {
   margin-top: 5px;
   background-color: #505050;
@@ -213,9 +225,9 @@ hr {
 .skipbutton {
   opacity: 50%;
   cursor: pointer;
-  position: absolute;
-  top: 0%;
-  right: 0%;
+  position:absolute;
+  top:0%;
+  right:0%;
   border: none;
   outline: none;
   background: transparent;
@@ -281,7 +293,7 @@ hr {
 
 #copyright {
   text-align: center;
-  margin: 0 auto;
+  margin:  0 auto;
   width: 200px;
   height: 230px;
 }
@@ -299,5 +311,3 @@ hr {
   margin-top: 0;
   margin-left: 5;
 }
-
-/*# sourceMappingURL=index.css.map */
