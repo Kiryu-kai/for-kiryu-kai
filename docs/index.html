@@ -40,18 +40,14 @@
 
     <main id="ind" class="fadein">
       <div class="Bord">
-        <div id="menu">
-          <button id="menubutton">
-            <p id="JPC">日本語のコメント　Japanese Comments　▾</p>
-            <p id="ENC">英語のコメント　English Comments　▾</p>
-            <p id="AC">すべてのコメント　All Comments　▾</p>
-          </button>
-        </div>
+        <div id="filter">
+          <button type="button" id="filter__btn">すべてのコメント　All Comments　▾</button>
 
-        <div class="button">
-          <button id="button_ja">日本語のコメントのみ表示<br>View only Japanese Comments</button><br>
-          <button id="button_en">英語のコメントのみ表示<Br>View only English Comments</button><br>
-          <button id="button_all">すべてのコメントを表示<br>View All Comments</button>
+          <div id="filter__menu">
+            <button type="button" data-type="ja">日本語のコメントのみ表示<br>View only Japanese Comments</button>
+            <button type="button" data-type="en">英語のコメントのみ表示<br>View only English Comments</button>
+            <button type="button" data-type="all">すべてのコメントを表示<br>View All Comments</button>
+          </div>
         </div>
 
         <div class="T">
@@ -59,8 +55,6 @@
             <img id="Tsubo" src="./images/Tsubo.png">
           </a>
         </div>
-
-        <div class="margin"></div>
 
         <div class='comment_ja Userbox'>
           <div class='User lightblue_t'>

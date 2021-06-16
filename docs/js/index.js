@@ -1,4 +1,3 @@
-
 // 表示アニメーション
 $(function() {
   /** フェードインさせる要素 */
@@ -43,37 +42,53 @@ $(function() {
 });
 
 
-$('#menubutton').on('click', function() {
-  $('.button').toggle(100)
-})
+// filter
+(function () {
+  /** ドロップダウンを開くためのボタン */
+  const $btn = $('#filter__btn');
+  /** ドロップダウンのコンテナ */
+  const $menu = $('#filter__menu');
+  /** ドロップダウン内のメニュー項目 */
+  const $menuBtns = $('#filter__menu button');
+  const labels = {
+    ja: '日本語のコメント　Japanese Comments　▾',
+    en: '英語のコメント　English Comments　▾',
+    all: 'すべてのコメント　All Comments　▾',
+  };
 
-$('#button_ja').on('click', function() {
-  $('.button').hide();
-  $('#JPC').show();
-  $('#ENC').hide();
-  $('#AC').hide();
-  $('.comment_ja').stop(true,true).show(1000);
-  $('.comment_en').stop(true,true).hide(1000);
-})
+  $btn.text(labels.all);
 
-$('#button_en').on('click', function() {
-  $('.button').hide();
-  $('#JPC').hide();
-  $('#ENC').show();
-  $('#AC').hide();
-  $('.comment_en').stop(true,true).show(1000);
-  $('.comment_ja').stop(true,true).hide(1000);
-})
+  $btn.on('click', function() {
+    $menu.toggle(100);
+  });
 
-$('#button_all').on('click', function() {
-  $('.button').hide();
-  $('#JPC').hide();
-  $('#ENC').hide();
-  $('#AC').show();
-  $('.comment_ja').stop(true,true).show(1000);
-  $('.comment_en').stop(true,true).show(1000);
-})
+  $menuBtns.on('click', function () {
+    const type = this.dataset.type;
 
+    $btn.text(labels[type]);
+    $menu.hide();
+
+    switch (type) {
+      case 'ja':
+        $('.comment_ja').stop(true, true).show(1000);
+        $('.comment_en').stop(true, true).hide(1000);
+
+        break;
+
+      case 'en':
+        $('.comment_en').stop(true, true).show(1000);
+        $('.comment_ja').stop(true, true).hide(1000);
+
+        break;
+
+      default:
+        $('.comment_ja').stop(true, true).show(1000);
+        $('.comment_en').stop(true, true).show(1000);
+
+        break;
+    }
+  });
+})();
 
 setTimeout(function() {
   $(window).scroll(function () {
