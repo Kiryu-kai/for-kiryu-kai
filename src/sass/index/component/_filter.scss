@@ -1,0 +1,57 @@
+@use "../../utils/mixin" as *;
+
+/* =============================================================================
+ * フィルターUI
+ * ========================================================================== */
+#filter {
+  background-color: 202020;
+  border-bottom: solid 4px #303030;
+
+  &__btn {
+    cursor: pointer;
+    background-color: transparent;
+    border: none;
+    outline: none;
+    color: white;
+    margin-left: 15px;
+    line-height: 60px;
+    font-size: 20px;
+  }
+
+  &__menu {
+    background-color: #505050;
+    width: 280px;
+    z-index: 9999;
+    padding: 5px 0;
+    margin-left: 15px;
+    position: absolute;
+
+    button {
+      cursor: pointer;
+      padding: 5px;
+      width: 100%;
+      background-color: transparent;
+      color: white;
+      border: none;
+      outline: none;
+      font-size: 20px;
+    }
+  }
+
+  @include min-screen() {
+    &__btn {
+      font-size: 13px;
+    }
+
+    &__menu {
+      button {
+        font-size: 13px;
+
+        &:hover,
+        &:focus {
+          background-color: #707070;
+        }
+      }
+    }
+  }
+}
