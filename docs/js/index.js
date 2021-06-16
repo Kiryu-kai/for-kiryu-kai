@@ -21,7 +21,7 @@ $(function() {
   $fadeIn.each(function (idx) {
     const $self = $(this);
 
-    keys.push(setTimeout(function(){
+    keys.push(window.setTimeout(function(){
       $self.addClass('visible');
 
       if ($fadeIn.length - 1 === idx) {
