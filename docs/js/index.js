@@ -25,9 +25,12 @@ setTimeout(function() {
    },1000);
 },9000);
 
-$('#menubutton').on('click', function() {
-  $('.button').toggle(100)
-})
+// コメントの出しわけ処理
+(function () {
+  $('#menubutton').on('click', function() {
+    $('.button').toggle(100)
+  })
+})();
 
 $('#button_ja').on('click', function() {
   $('.button').hide();
