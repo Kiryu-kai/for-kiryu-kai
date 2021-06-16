@@ -107,109 +107,13 @@ h2 {
   border-bottom-right-radius: 8px;
   height: 30px;
   width: 95%;
+  height:auto;
 }
 
 .Text p {
   margin-top: 0;
   margin-left: 15px;
   line-height: 30px;
-}
-
-.text_2 {
-  height: 60px;
-}
-
-@media only screen and (max-width: 1000px) {
-  .text_2 {
-    height: 125px;
-  }
-}
-
-@media only screen and (max-width: 1000px) {
-  .text_1-5 {
-    height: 95px;
-  }
-}
-
-.text_3 {
-  height: 90px;
-}
-
-@media only screen and (max-width: 1000px) {
-  .text_3 {
-    height: 162px;
-  }
-}
-
-.text_4 {
-  height: 120px;
-}
-
-@media only screen and (max-width: 1000px) {
-  .text_4 {
-    height: 216px;
-  }
-}
-
-.text_5 {
-  height: 150px;
-}
-
-@media only screen and (max-width: 1000px) {
-  .text_5 {
-    height: 270px;
-  }
-}
-
-.text_6 {
-  height: 180px;
-}
-
-@media only screen and (max-width: 1000px) {
-  .text_6 {
-    height: 324px;
-  }
-
-}
-
-.text_7 {
-  height: 210px;
-}
-
-@media only screen and (max-width: 1000px) {
-  .text_7 {
-    height: 378px;
-  }
-}
-
-.text_8 {
-  height: 240px;
-}
-
-@media only screen and (max-width: 1000px) {
-  .text_8 {
-    height: 432px;
-  }
-}
-
-.text_9 {
-  height: 270px;
-}
-
-@media only screen and (max-width: 1000px) {
-  .text_9 {
-    height: 486px;
-  }
-}
-
-.text_10 {
-  height: 300px;
-}
-
-@media only screen and (max-width: 1000px) {
-  .text_10 {
-    height: 540px;
-  }
 }
 
 .Userbox {
