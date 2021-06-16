@@ -1,0 +1,11 @@
+
+html:not(.no-js) .fadein {
+  transition: 3000ms opacity ease-out;
+  opacity: 0;
+  pointer-events: none;
+}
+
+html:not(.no-js) .fadein.visible {
+  opacity: 1;
+  pointer-events: auto;
+}

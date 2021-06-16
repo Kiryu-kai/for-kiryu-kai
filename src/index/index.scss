@@ -1,3 +1,6 @@
+@use "./component/fadein";
+@use "./component/filter";
+
 .ja_t {
   margin-top: 50px;
   margin-bottom: 30px;
@@ -8,16 +11,6 @@ h2 {
   text-align: center;
 }
 
-html:not(.no-js) .fadein {
-  transition: 3000ms opacity ease-out;
-  opacity: 0;
-  pointer-events: none;
-}
-
-html:not(.no-js) .fadein.visible {
-  opacity: 1;
-  pointer-events: auto;
-}
 
 @media only screen and (max-width: 1000px) {
   #header p,
@@ -48,58 +41,6 @@ html:not(.no-js) .fadein.visible {
 #footer h2 {
   font-size: 200%;
 }
-
-
-/* =============================================================================
- * フィルターUI
- * ========================================================================== */
-#filter {
-  height: 60px;
-  background-color: 202020;
-  border-bottom: solid 4px #303030;
-}
-
-#filter__btn {
-  cursor: pointer;
-  background-color: transparent;
-  border: none;
-  outline: none;
-  color: white;
-  margin-left: 15px;
-  line-height: 60px;
-}
-
-#filter__menu {
-  background-color: #505050;
-  width: 280px;
-  z-index: 9999;
-  margin-left: 15px;
-  position: absolute;
-}
-
-#filter__menu button {
-  cursor: pointer;
-  padding: 5px;
-  width: 100%;
-  background-color: transparent;
-  color: white;
-  border: none;
-  outline: none;
-}
-
-@media only screen and (max-width: 1000px) {
-  #filter__btn {
-    font-size: 20px;
-  }
-
-  #filter__menu button {
-    font-size: 20px;
-  }
-}
-
-
-
-
 
 .T {
   margin: 20px auto 15px auto;
