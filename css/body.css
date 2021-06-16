@@ -47,8 +47,14 @@ h2 {
   line-height: 60px;
 }
 
+@media only screen and (max-width: 1000px) {
+  #menubutton p {
+    font-size: 20px;
+  }
+}
+
 .T {
-  margin: 20px auto 0 auto;
+  margin: 20px auto 15px auto;
   background-color: #1565c0;
   width: 95%;
   border-radius: 8px;
@@ -117,10 +123,6 @@ h2 {
   line-height: 30px;
 }
 
-.Userbox {
-  margin-top: 10px;
-}
-
 .User {
   height: 35px;
   width: 95%;
@@ -161,12 +163,18 @@ hr {
 .button button {
   cursor: pointer;
   padding: 5px;
-  height: 50px;
+  height: 60px;
   width: 100%;
   background-color: transparent;
   color: white;
   border: none;
   outline: none;
+}
+
+@media only screen and (max-width: 1000px) {
+  .button button {
+    font-size: 20px;
+  }
 }
 
 #button_ja {
