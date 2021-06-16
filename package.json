@@ -22,5 +22,8 @@
   },
   "scripts": {
     "server": "npx http-server ./docs -o"
+  },
+  "devDependencies": {
+    "@types/jquery": "^3.5.5"
   }
 }
