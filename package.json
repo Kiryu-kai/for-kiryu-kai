@@ -1,0 +1,26 @@
+{
+  "name": "kiryu-kai.com_53616c7465645f5f20bd34c7db7488376eb275572b3f25d1fb8a335f6bca06a92f00ad901ef1a594",
+  "description": "動作確認用及び企画関係者用。",
+  "version": "1.0.0",
+  "author": "Choco2807 <82220979+Choco2807@users.noreply.github.com> (https://github.com/Choco2807)",
+  "bugs": {
+    "url": "https://github.com/Choco2807/kiryu-kai.com_53616c7465645f5f20bd34c7db7488376eb275572b3f25d1fb8a335f6bca06a92f00ad901ef1a594/issues"
+  },
+  "directories": {
+    "doc": "docs"
+  },
+  "engines": {
+    "node": "14"
+  },
+  "homepage": "https://github.com/Choco2807/kiryu-kai.com_53616c7465645f5f20bd34c7db7488376eb275572b3f25d1fb8a335f6bca06a92f00ad901ef1a594#readme",
+  "keywords": [],
+  "license": "UNLICENSED",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Choco2807/kiryu-kai.com_53616c7465645f5f20bd34c7db7488376eb275572b3f25d1fb8a335f6bca06a92f00ad901ef1a594.git"
+  },
+  "scripts": {
+    "server": "npx http-server ./docs -o"
+  }
+}
