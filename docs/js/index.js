@@ -1,29 +1,47 @@
+
+// 表示アニメーション
 $(function() {
-  $('.skipbutton').hide().fadeIn(3000)
-  $('#ind').hide()
-  $('#h_1').hide().fadeIn(3000)
-  $('#h_2').hide()
+  /** フェードインさせる要素 */
+  const $fadeIn = $('.fadein');
+  /** フェードインアニメーションをスキップさせるボタン */
+  const $skipBtn = $('.skipbutton');
+  /** @type {number[]} - setTimeoutのキー */
+  const keys = [];
+
+  // フェードインアニメーションをスキップさせるためのボタン
+  $skipBtn.on('click', function() {
+    $fadeIn.removeClass('fadein');
+    $skipBtn.remove();
+
+    keys.forEach(function (key) {
+      clearTimeout(key);
+    });
+  })
+
+  // フェードイン
+  $fadeIn.each(function (idx) {
+    const $self = $(this);
+
+    keys.push(setTimeout(function(){
+      $self.addClass('visible');
+
+      if ($fadeIn.length - 1 === idx) {
+        $skipBtn.fadeOut(function () {
+          $skipBtn.remove();
+        });
+      }
+    }, idx * 3000));
+  });
+});
+
+
+$(function() {
   $('#kiryukai').hide()
-  $('#h_3').hide()
   $('#JPC').hide()
   $('#ENC').hide()
   $('.button').hide()
-  $('#copyright').hide()
-  setTimeout(function(){
-    $('#h_2').fadeIn(3000);
-    setTimeout(function(){
-      $('#h_3').fadeIn(3000);
-    },3000);
-  },3000);
 });
 
-setTimeout(function() {
-  $('.skipbutton').hide(1000);
-   setTimeout(function() {
-     $('.skipbutton').remove()
-     $('#ind').fadeIn(2000)
-   },1000);
-},9000);
 
 $('#menubutton').on('click', function() {
   $('.button').toggle(100)
@@ -56,13 +74,6 @@ $('#button_all').on('click', function() {
   $('.comment_en').stop(true,true).show(1000);
 })
 
-$('.skipbutton').on('click', function() {
-  $('#h_1').stop(true,true).show()
-  $('#h_2').stop(true,true).show()
-  $('#h_3').stop(true,true).show()
-  $('#ind').stop(true,true).show()
-  $('.skipbutton').remove()
-})
 
 setTimeout(function() {
   $(window).scroll(function () {

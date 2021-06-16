@@ -1,4 +1,4 @@
-<html lang="ja" dir="ltr">
+<html lang="ja" dir="ltr" class="no-js">
   <head prefix="og: http://ogp.me/ns">
     <meta charset="utf-8">
     <title>桐生会　感謝を伝える板</title>
@@ -11,27 +11,34 @@
     <meta name="twitter:card" content="summary_large_image" />
     <meta name="twitter:site" content="@Choco2807" />
     <link rel="stylesheet" href="./css/body.css?ver=0.2">
-    <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+    <link rel="icon" href="./images/kiryu-kai_daimon.ico">
+    <script>document.documentElement.classList.remove('no-js')</script>
+    <script src="https://code.jquery.com/jquery-3.6.0.js" defer></script>
+    <script src="./js/index.js" defer></script>
   </head>
 
   <body>
-    <button class="skipbutton">アニメーションをスキップ</button>
-    <div id="header">
+    <header id="header">
       <div id="h_1">
-        <h1 class="ja_t">桐生会から桐生会へ</h1>
-        <h2 class="en">From Kiryu-Kai, To Kiryu-Kai</h2>
-      </div>
-      <div id="h_2">
-        <h2 class="ja">～ホロライブ4期生 "桐生ココ" を推した者同士、感謝を込めて～</h2>
-        <h3 class="en"></h3>
-      </div>
-      <div id="h_3">
-        <h2 class="ja">これまでも、これからも　同じ桐生会の仲間として</h2>
-        <h3 class="en"></h3>
-      </div>
-    </div>
+        <h1 class="ja_t fadein">桐生会から桐生会へ</h1>
 
-    <div id="ind">
+        <button class="skipbutton">アニメーションをスキップ（Skip）</button>
+
+        <p class="en fadein">From Kiryu-Kai, To Kiryu-Kai</p>
+      </div>
+
+      <div class="fadein">
+        <p class="ja">～ホロライブ4期生 "桐生ココ" を推した者同士、感謝を込めて～</p>
+        <p class="en"></p>
+      </div>
+
+      <div class="fadein">
+        <p class="ja">これまでも、これからも　同じ桐生会の仲間として</p>
+        <p class="en"></p>
+      </div>
+    </header>
+
+    <main id="ind" class="fadein">
       <div class="Bord">
         <div id="menu">
           <button id="menubutton">
@@ -190,17 +197,19 @@
 
         <p></p>
       </div>
-    </div>
+    </main>
 
-    <h1 id="kiryukai">桐生会は不滅なり</h1>
-    <div id="copyright">
-      <p id="a">企画提案<br><a class="TL" target="_blank" rel="noopener noreferrer" href="https://twitter.com/aya_holo">あや</a></p>
-      <p id="c">サイト制作<br><a class="TL" target="_blank" rel="noopener noreferrer" href="https://twitter.com/Choco2807">Choco2807</a></p>
-      <p id="k">協力<br>
-      <a class="TL" target="_blank" rel="noopener noreferrer" href="https://twitter.com/gA1nBa1Ta1Ro5">ガンバタロ</a><br>
-      <a class="TL" target="_blank" rel="noopener noreferrer" href="https://twitter.com/ayato_fr">𝑨𝒚𝒂𝒕𝒐 𝑴𝒂𝒆𝒏𝒐 前野綾人</a><br>
-      <a class="TL" target="_blank" rel="noopener noreferrer" href="https://twitter.com/Lattesmc">Lats</a></p>
-    </div>
-    <script src="./js/index.js"></script>
+    <footer id="footer" class="fadein">
+      <h2 id="kiryukai">桐生会は不滅なり</h2>
+
+      <div id="copyright">
+        <p id="a">企画提案<br><a class="TL" target="_blank" rel="noopener noreferrer" href="https://twitter.com/aya_holo">あや</a></p>
+        <p id="c">サイト制作<br><a class="TL" target="_blank" rel="noopener noreferrer" href="https://twitter.com/Choco2807">Choco2807</a></p>
+        <p id="k">協力<br>
+        <a class="TL" target="_blank" rel="noopener noreferrer" href="https://twitter.com/gA1nBa1Ta1Ro5">ガンバタロ</a><br>
+        <a class="TL" target="_blank" rel="noopener noreferrer" href="https://twitter.com/ayato_fr">𝑨𝒚𝒂𝒕𝒐 𝑴𝒂𝒆𝒏𝒐 前野綾人</a><br>
+        <a class="TL" target="_blank" rel="noopener noreferrer" href="https://twitter.com/Lattesmc">Lats</a></p>
+      </div>
+    </footer>
   </body>
 </html>
