@@ -1,3 +1,5 @@
+@use "../mixin" as *;
+
 /* =============================================================================
  * フィルターUI
  * ========================================================================== */
@@ -5,42 +7,52 @@
   height: 60px;
   background-color: 202020;
   border-bottom: solid 4px #303030;
-}
 
-#filter__btn {
-  cursor: pointer;
-  background-color: transparent;
-  border: none;
-  outline: none;
-  color: white;
-  margin-left: 15px;
-  line-height: 60px;
-}
-
-#filter__menu {
-  background-color: #505050;
-  width: 280px;
-  z-index: 9999;
-  margin-left: 15px;
-  position: absolute;
-}
-
-#filter__menu button {
-  cursor: pointer;
-  padding: 5px;
-  width: 100%;
-  background-color: transparent;
-  color: white;
-  border: none;
-  outline: none;
-}
-
-@media only screen and (max-width: 1000px) {
-  #filter__btn {
+  &__btn {
+    cursor: pointer;
+    background-color: transparent;
+    border: none;
+    outline: none;
+    color: white;
+    margin-left: 15px;
+    line-height: 60px;
     font-size: 20px;
   }
 
-  #filter__menu button {
-    font-size: 20px;
+  &__menu {
+    background-color: #505050;
+    width: 280px;
+    z-index: 9999;
+    padding: 5px 0;
+    margin-left: 15px;
+    position: absolute;
+
+    button {
+      cursor: pointer;
+      padding: 5px;
+      width: 100%;
+      background-color: transparent;
+      color: white;
+      border: none;
+      outline: none;
+      font-size: 20px;
+    }
+  }
+
+  @include min-screen() {
+    &__btn {
+      font-size: 13px;
+    }
+
+    &__menu {
+      button {
+        font-size: 13px;
+
+        &:hover,
+        &:focus {
+          background-color: #707070;
+        }
+      }
+    }
   }
 }
