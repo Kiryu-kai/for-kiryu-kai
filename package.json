@@ -23,13 +23,14 @@
   "keywords": [],
   "license": "UNLICENSED",
   "main": "index.js",
+  "private": true,
   "repository": {
     "type": "git",
     "url": "git+https://github.com/Choco2807/kiryu-kai.com_53616c7465645f5f20bd34c7db7488376eb275572b3f25d1fb8a335f6bca06a92f00ad901ef1a594.git"
   },
   "scripts": {
-    "build:dev": "sass ./src/sass/index/index.scss ./docs/css/index.css",
     "build": "sass ./src/sass/index/index.scss ./docs/css/index.css --no-source-map --style=compressed",
+    "build:dev": "sass ./src/sass/index/index.scss ./docs/css/index.css",
     "sass": "nodemon --watch src/sass --ext scss --exec npm run build:dev",
     "server": "npx http-server ./docs -o",
     "start": "run-p sass server"
