@@ -56,6 +56,7 @@ $(function() {
     all: 'すべてのコメント　All Comments　▾',
   };
 
+  $menu.hide();
   $btn.text(labels.all);
 
   $btn.on('click', function() {
