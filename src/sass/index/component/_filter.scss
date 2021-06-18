@@ -8,33 +8,33 @@
   border-bottom: solid 4px #303030;
 
   &__btn {
+    margin-left: 15px;
+    font-size: 20px;
+    line-height: 60px;
+    color: white;
     cursor: pointer;
     background-color: transparent;
-    border: none;
+    border: 0;
     outline: none;
-    color: white;
-    margin-left: 15px;
-    line-height: 60px;
-    font-size: 20px;
   }
 
   &__menu {
-    background-color: #505050;
-    width: 280px;
+    position: absolute;
     z-index: 9999;
+    width: 280px;
     padding: 5px 0;
     margin-left: 15px;
-    position: absolute;
+    background-color: #505050;
 
     button {
-      cursor: pointer;
-      padding: 5px;
       width: 100%;
-      background-color: transparent;
-      color: white;
-      border: none;
-      outline: none;
+      padding: 5px;
       font-size: 20px;
+      color: white;
+      cursor: pointer;
+      background-color: transparent;
+      border: 0;
+      outline: none;
     }
   }
 
