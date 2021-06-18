@@ -92,11 +92,11 @@ $(function() {
   });
 })();
 
-setTimeout(function() {
+if ($('#ind').is(':visible')) {
   $(window).scroll(function () {
     if ($(this).scrollTop() > 300) {
       $('#kiryukai').fadeIn(2500);
       $('#copyright').fadeIn(2500);
     }
   });
-},14000)
+}
