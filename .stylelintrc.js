@@ -3,7 +3,8 @@ module.exports = {
   plugins: ['./node_modules/stylelint-scss'],
   ignoreFiles: [
     'node_modules/**',
-    'build/**',
+    'docs/**',
+    'src/sass/lib/**',
   ],
   rules: {
     'color-no-invalid-hex': true,

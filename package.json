@@ -9,10 +9,14 @@
   "dependencies": {},
   "devDependencies": {
     "@types/jquery": "^3.5.5",
+    "husky": "^6.0.0",
+    "lint-staged": "^11.0.0",
     "nodemon": "^2.0.7",
     "npm-run-all": "^4.1.5",
     "sass": "^1.35.1",
-    "stylelint": "^13.13.1"
+    "stylelint": "^13.13.1",
+    "stylelint-config-recess-order": "^2.4.0",
+    "stylelint-scss": "^3.19.0"
   },
   "directories": {
     "doc": "docs"
@@ -23,6 +27,11 @@
   "homepage": "https://github.com/Choco2807/kiryu-kai.com_53616c7465645f5f20bd34c7db7488376eb275572b3f25d1fb8a335f6bca06a92f00ad901ef1a594#readme",
   "keywords": [],
   "license": "UNLICENSED",
+  "lint-staged": {
+    "*.{css,less,sass,scss}": [
+      "stylelint --fix"
+    ]
+  },
   "main": "index.js",
   "private": true,
   "repository": {
@@ -32,6 +41,8 @@
   "scripts": {
     "build": "sass ./src/sass/index/index.scss ./docs/css/index.css --no-source-map --style=compressed",
     "build:dev": "sass ./src/sass/index/index.scss ./docs/css/index.css",
+    "lint-staged": "lint-staged",
+    "prepare": "husky install",
     "sass": "nodemon --watch src/sass --ext scss --exec npm run build:dev",
     "server": "npx http-server ./docs -o",
     "start": "run-p sass server",
