@@ -36,6 +36,7 @@ $(function() {
 
 $(function() {
   $('#kiryukai').hide()
+  $('#copyright').hide()
   $('#JPC').hide()
   $('#ENC').hide()
   $('.button').hide()
