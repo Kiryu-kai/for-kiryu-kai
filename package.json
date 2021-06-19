@@ -42,6 +42,7 @@
     "build": "sass ./src/sass/index/index.scss ./docs/css/index.css --no-source-map --style=compressed",
     "build:dev": "sass ./src/sass/index/index.scss ./docs/css/index.css",
     "lint-staged": "lint-staged",
+    "postinstall": "husky install",
     "prepare": "husky install",
     "sass": "nodemon --watch src/sass --ext scss --exec npm run build:dev",
     "server": "npx http-server ./docs -o",
