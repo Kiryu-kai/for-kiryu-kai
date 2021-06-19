@@ -1,4 +1,4 @@
-# [kiryu-kai.com](https://kiryu-kai.com)
+# [kiryu-kai.com/for-kiryu-kai/](https://kiryu-kai.com/for-kiryu-kai/)
 
 動作確認用及び企画関係者用。
 
