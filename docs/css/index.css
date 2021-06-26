@@ -421,14 +421,23 @@ h2 {
     font-size: 110%;
   }
 }
+
+#header {
+    font-size: 130%;
+}
+
 @media screen and (min-width: 1000px) {
   #header {
-    font-size: 130%;
+    font-size: 100%;
   }
+}
+
+#ind {
+    font-size: 20px;
 }
 @media screen and (min-width: 1000px) {
   #ind {
-    font-size: 20px;
+    font-size: 16px;
   }
 }
 #header p {
