@@ -1,6 +1,6 @@
-# [kiryu-kai.com/for-kiryu-kai/](https://kiryu-kai.com/for-kiryu-kai/)
+# [www.kiryu-kai.com/for-kiryu-kai/](https://www.kiryu-kai.com/for-kiryu-kai/)
 
-動作確認用及び企画関係者用。
+たつのこからたつのこへ向けての言葉が掲載されているページ。
 
 ## Contributing
 
