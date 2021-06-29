@@ -1,4 +1,4 @@
-# [www.kiryu-kai.com/for-kiryu-kai/](https://www.kiryu-kai.com/for-kiryu-kai/)
+# [kiryu-kai.com/for-kiryu-kai/](https://kiryu-kai.com/for-kiryu-kai/)
 
 たつのこからたつのこへ向けての言葉が掲載されているページ。
 
