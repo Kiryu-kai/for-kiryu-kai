@@ -578,6 +578,7 @@ h2 {
   border: solid;
   color: black;
   text-decoration: none;
+  width: 500px;
 }
 
 @media screen and (min-width: 1000px) {
@@ -594,19 +595,26 @@ h2 {
 
 .fbb_p {
   margin: 5;
+  font-size: 20px;
+}
+
+@media screen and (min-width: 1000px) {
+  .fbb_p {
+    font-size: 16px;
+  }
 }
 
 .postpagebtn {
   background-color: white;
   position:fixed;
-  bottom: 75px;
+  bottom: 110px;
   right: 5px;
   cursor: pointer;
   border: solid;
   color: black;
   text-decoration: none;
   margin-bottom: 10px;
-  width: 445px;
+  width: 500px;
 }
 
 @media screen and (min-width: 1000px) {
@@ -624,6 +632,13 @@ h2 {
 
 .ppb_p {
   margin: 5;
+  font-size: 20px;
+}
+
+@media screen and (min-width: 1000px) {
+  .ppb_p {
+    font-size: 16px;
+  }
 }
 
 .lightblue_t {
@@ -702,8 +717,13 @@ h2 {
 
 #k {
   float: left;
-  margin: 20 auto;
+  margin: 20 0 250 auto;
   width: 200px;
 }
 
+@media screen and (min-width: 1000px) {
+  #k {
+    margin: 20 auto;
+  }
+}
 /*# sourceMappingURL=index.css.map */
