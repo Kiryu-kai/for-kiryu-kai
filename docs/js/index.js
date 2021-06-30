@@ -40,6 +40,7 @@ $(function() {
   $('#JPC').hide()
   $('#ENC').hide()
   $('.button').hide()
+  $('.feedbackbtn').hide()
 });
 
 
@@ -94,9 +95,17 @@ $(function() {
 
 if ($('#ind').is(':visible')) {
   $(window).scroll(function () {
-    if ($(this).scrollTop() > 300) {
+    if ($(this).scrollTop() > 3000) {
       $('#kiryukai').fadeIn(2500);
       $('#copyright').fadeIn(2500);
+    }
+  });
+}
+
+if ($('#ind').is(':visible')) {
+  $(window).scroll(function () {
+    if ($(this).scrollTop() > 300) {
+      $('.feedbackbtn').fadeIn(1000);
     }
   });
 }
