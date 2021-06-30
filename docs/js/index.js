@@ -41,6 +41,7 @@ $(function() {
   $('#ENC').hide()
   $('.button').hide()
   $('.feedbackbtn').hide()
+  $('.postpagebtn').hide()
 });
 
 
@@ -106,6 +107,7 @@ if ($('#ind').is(':visible')) {
   $(window).scroll(function () {
     if ($(this).scrollTop() > 300) {
       $('.feedbackbtn').fadeIn(1000);
+      $('.postpagebtn').fadeIn(1000);
     }
   });
 }
