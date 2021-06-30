@@ -463,24 +463,41 @@ h2 {
   margin: 0;
 }
 
-#Tsubo {
-  height: 65px;
+#Tsubo_name {
+  margin-bottom: 25px;
+  margin-left: 15px;
+  line-height: 45px;
 }
 
-.en {
-  margin-top: 0;
-  margin-bottom: 0;
-}
-
-.ja {
-  margin-top: 20px;
-  margin-bottom: 0;
+#Tsubo_text {
+  margin-top: -5px;
+  margin-right: 10px;
+  margin-left: 15px;
+  line-height: 35px;
 }
 
 .ja_t {
   margin-top: 50px;
   margin-bottom: 0;
   text-align: center;
+}
+
+.en_t {
+  margin-top: 0;
+  margin-bottom: 0;
+  font-size: 22px;
+}
+
+.ja {
+  margin-top: 20px;
+  margin-bottom: 0;
+  font-size: 20px;
+}
+
+.en {
+  margin-top: 0;
+  margin-bottom: 0;
+  font-size: 18px;
 }
 
 .bord {
@@ -552,6 +569,33 @@ h2 {
   opacity: 50%;
 }
 
+.feedbackbtn {
+  background-color: white;
+  position:fixed;
+  bottom: 5px;
+  right: 5px;
+  cursor: pointer;
+  border: solid;
+  color: black;
+  text-decoration: none;
+}
+
+@media screen and (min-width: 1000px) {
+  .feedbackbtn {
+    position:fixed;
+    bottom: 5px;
+    right: 5px;
+    cursor: pointer;
+    background: transparent;
+    border: none;
+    width: 18%;
+  }
+}
+
+.fbb_p {
+  margin: 5;
+}
+
 .lightblue_t {
   background-color: #00b8d4;
 }
@@ -619,6 +663,7 @@ h2 {
 
 #a {
   float: left;
+  margin-top: 30;
 }
 
 #c {
@@ -627,8 +672,7 @@ h2 {
 
 #k {
   float: left;
-  margin-top: 0;
-  margin-left: 5;
+  margin: 20 60 auto;
 }
 
 /*# sourceMappingURL=index.css.map */
