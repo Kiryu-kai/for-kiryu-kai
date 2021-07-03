@@ -700,7 +700,7 @@ h2 {
 }
 
 #copyright {
-  width: 200px;
+  width: 220px;
   height: 230px;
   margin: 0 auto;
   text-align: center;
@@ -718,7 +718,7 @@ h2 {
 #k {
   float: left;
   margin: 20 0 250 auto;
-  width: 200px;
+  width: 220px;
 }
 
 @media screen and (min-width: 1000px) {
