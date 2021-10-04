@@ -501,9 +501,9 @@ h2 {
 }
 
 .bord {
-  width: 80%;
+  width: 95%;
   margin-top: 40px;
-  margin-left: 10%;
+  margin-left: 2.5%;
   background-color: #181818;
   border: solid 4px #303030;
 }
@@ -578,7 +578,7 @@ h2 {
   border: solid;
   color: black;
   text-decoration: none;
-  width: 500px;
+  width: 95%;
 }
 
 @media screen and (min-width: 1000px) {
@@ -595,7 +595,7 @@ h2 {
 
 .fbb_p {
   margin: 5;
-  font-size: 20px;
+  font-size: 30px;
 }
 
 @media screen and (min-width: 1000px) {
@@ -614,7 +614,7 @@ h2 {
   color: black;
   text-decoration: none;
   margin-bottom: 10px;
-  width: 500px;
+  width: 95%;
 }
 
 @media screen and (min-width: 1000px) {
@@ -632,7 +632,7 @@ h2 {
 
 .ppb_p {
   margin: 5;
-  font-size: 20px;
+  font-size: 30px;
 }
 
 @media screen and (min-width: 1000px) {
@@ -717,7 +717,7 @@ h2 {
 
 #k {
   float: left;
-  margin: 20 0 250 auto;
+  margin: 20 0 280 auto;
   width: 220px;
 }
 
