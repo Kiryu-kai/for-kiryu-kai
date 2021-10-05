@@ -468,7 +468,12 @@ h2 {
 }
 
 #footer h2 {
-  font-size: 200%;
+  font-size:70px;
+}
+@media screen and (min-width: 1000px) {
+  #footer h2 {
+    font-size: 200%;
+  }
 }
 
 .chat {
@@ -801,10 +806,16 @@ h2 {
 }
 
 #copyright {
-  width: 220px;
-  height: 230px;
+  width: 400px;
+  font-size: 25px;
   margin: 0 auto;
   text-align: center;
+}
+@media screen and (min-width: 1000px) {
+  #copyright {
+    width: 220px;
+    font-size: 16px;
+  }
 }
 
 #a {
@@ -819,12 +830,12 @@ h2 {
 #k {
   float: left;
   margin: 20 0 280 auto;
-  width: 220px;
+  width: 400px;
 }
-
 @media screen and (min-width: 1000px) {
   #k {
     margin: 20 auto;
+    width: 220px;
   }
 }
 /*# sourceMappingURL=index.css.map */
