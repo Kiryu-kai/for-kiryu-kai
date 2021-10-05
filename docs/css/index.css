@@ -372,13 +372,14 @@ html:not(.no-js) .fadein.visible {
  * フィルターUI
  * ========================================================================== */
 #filter {
+  height: 80px;
   background-color: 202020;
   border-bottom: solid 4px #303030;
 }
 #filter__btn {
   margin-left: 15px;
-  font-size: 20px;
-  line-height: 60px;
+  font-size: 25px;
+  line-height: 70px;
   color: white;
   cursor: pointer;
   background-color: transparent;
@@ -388,7 +389,7 @@ html:not(.no-js) .fadein.visible {
 #filter__menu {
   position: absolute;
   z-index: 9999;
-  width: 280px;
+  width: 400px;
   padding: 5px 0;
   margin-left: 15px;
   background-color: #505050;
@@ -396,19 +397,40 @@ html:not(.no-js) .fadein.visible {
 #filter__menu button {
   width: 100%;
   padding: 5px;
-  font-size: 20px;
+  font-size: 25px;
+  margin-bottom: 20px;
   color: white;
   cursor: pointer;
   background-color: transparent;
   border: 0;
   outline: none;
 }
+#filter__menu button:first-child {
+  margin-top: 5px;
+}
+#filter__menu button:last-child {
+  margin-bottom: 5px;
+}
 @media screen and (min-width: 1000px) {
+  #filter {
+    height: 65px;
+  }
   #filter__btn {
     font-size: 13px;
+    line-height: 60px;
+  }
+  #filter__menu {
+    width: 280px;
   }
   #filter__menu button {
     font-size: 13px;
+    margin-bottom: 0;
+  }
+  #filter__menu button:first-child {
+    margin-top: 0;
+  }
+  #filter__menu button:last-child {
+    margin-bottom: 0;
   }
   #filter__menu button:hover, #filter__menu button:focus {
     background-color: #707070;
@@ -433,7 +455,7 @@ h2 {
 }
 
 #ind {
-    font-size: 20px;
+    font-size: 30px;
 }
 @media screen and (min-width: 1000px) {
   #ind {
@@ -461,43 +483,95 @@ h2 {
 
 .T div {
   margin: 0;
+  height: 50px;
+}
+@media screen and (min-width: 1000px) {
+  .T div {
+    margin: 0;
+    height: 35px;
+  }
 }
 
 #Tsubo_name {
   margin-bottom: 25px;
   margin-left: 15px;
-  line-height: 45px;
+  line-height: 60px;
+}
+@media screen and (min-width: 1000px) {
+  #Tsubo_name {
+    margin-bottom: 25px;
+    margin-left: 15px;
+    line-height: 45px;
+  }
 }
 
 #Tsubo_text {
   margin-top: -5px;
   margin-right: 10px;
   margin-left: 15px;
-  line-height: 35px;
+  line-height: 50px;
+}
+@media screen and (min-width: 1000px) {
+  #Tsubo_text {
+    margin-top: -5px;
+    margin-right: 10px;
+    margin-left: 15px;
+    line-height: 35px;
+  }
 }
 
 .ja_t {
   margin-top: 50px;
   margin-bottom: 0;
   text-align: center;
+  font-size: 50px;
+}
+@media screen and (min-width: 1000px) {
+  .ja_t {
+    margin-top: 50px;
+    margin-bottom: 0;
+    text-align: center;
+    font-size: 2em;
+  }
 }
 
 .en_t {
   margin-top: 0;
   margin-bottom: 0;
-  font-size: 22px;
+  font-size: 25px;
+}
+@media screen and (min-width: 1000px) {
+  .en_t {
+    margin-top: 0;
+    margin-bottom: 0;
+    font-size: 22px;
+  }
 }
 
 .ja {
   margin-top: 20px;
   margin-bottom: 0;
-  font-size: 20px;
+  font-size: 28px;
+}
+@media screen and (min-width: 1000px) {
+  .ja {
+    margin-top: 20px;
+    margin-bottom: 0;
+    font-size: 20px;
+  }
 }
 
 .en {
   margin-top: 0;
   margin-bottom: 0;
-  font-size: 18px;
+  font-size: 22px;
+}
+@media screen and (min-width: 1000px) {
+  .en {
+    margin-top: 0;
+    margin-bottom: 0;
+    font-size: 18px;
+  }
 }
 
 .bord {
@@ -531,16 +605,36 @@ h2 {
   margin-top: 0;
   margin-right: 10px;
   margin-left: 15px;
-  line-height: 30px;
+  line-height: 40px;
+  margin-bottom: 20px;
+}
+@media screen and (min-width: 1000px) {
+  .Text p {
+    margin-top: 0;
+    margin-right: 10px;
+    margin-left: 15px;
+    line-height: 30px;
+    margin-bottom: 15px;
+  }
 }
 
 .User {
   display: block;
-  height: 35px;
+  height: 45px;
   margin: 0 auto;
   text-align: left;
   border-top-left-radius: 8px;
   border-top-right-radius: 8px;
+}
+@media screen and (min-width: 1000px) {
+  .User {
+    display: block;
+    height: 35px;
+    margin: 0 auto;
+    text-align: left;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+  }
 }
 
 .Username {
@@ -550,7 +644,14 @@ h2 {
 .TL p {
   margin-bottom: 25px;
   margin-left: 15px;
-  line-height: 35px;
+  line-height: 45px;
+}
+@media screen and (min-width: 1000px) {
+  .TL p {
+    margin-bottom: 25px;
+    margin-left: 15px;
+    line-height: 35px;
+  }
 }
 
 .TL {
