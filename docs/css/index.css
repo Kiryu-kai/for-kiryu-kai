@@ -485,6 +485,11 @@ h2 {
   background-color: #1565c0;
   border-radius: 8px;
 }
+@media screen and (min-width: 1000px) {
+  .T {
+    margin-bottom: 15px;
+  }
+}
 
 .T div {
   margin: 0;
