@@ -481,7 +481,7 @@ h2 {
 }
 
 .T {
-  margin: 20px auto 15px;
+  margin: 20px auto 25px;
   background-color: #1565c0;
   border-radius: 8px;
 }
@@ -611,7 +611,7 @@ h2 {
   margin-right: 10px;
   margin-left: 15px;
   line-height: 40px;
-  margin-bottom: 20px;
+  margin-bottom: 25px;
 }
 @media screen and (min-width: 1000px) {
   .Text p {
@@ -713,7 +713,7 @@ h2 {
 .postpagebtn {
   background-color: white;
   position:fixed;
-  bottom: 110px;
+  bottom: 130px;
   right: 5px;
   cursor: pointer;
   border: solid;
@@ -820,22 +820,48 @@ h2 {
 
 #a {
   float: left;
-  margin-top: 30;
+}
+#a a {
+  display: block;
+  margin-top: 30px;
+}
+@media screen and (min-width: 1000px) {
+  #a a {
+    margin-top: 15px;
+  }
 }
 
 #c {
   float: right;
 }
+#c a {
+  display: block;
+  margin-bottom: 20px;
+}
+@media screen and (min-width: 1000px) {
+  #c a {
+    margin-bottom: 5px;
+  }
+}
 
 #k {
   float: left;
-  margin: 20 0 280 auto;
+  margin: 20 0 300 auto;
   width: 400px;
+}
+#k a {
+  display: block;
+  margin-bottom: 20px;
 }
 @media screen and (min-width: 1000px) {
   #k {
     margin: 20 auto;
     width: 220px;
+  }
+}
+@media screen and (min-width: 1000px) {
+  #k a {
+    margin-bottom: 5px;
   }
 }
 /*# sourceMappingURL=index.css.map */
