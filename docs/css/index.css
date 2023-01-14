@@ -20,6 +20,10 @@ html {
  */
 body {
   margin: 0;
+  font-family: sans-serif;
+  background-image: url(../images/background.webp);
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 /**
@@ -345,7 +349,6 @@ template {
 }
 
 body {
-  padding: 8px;
   line-height: 1.5;
 }
 
@@ -360,7 +363,7 @@ hr {
 html:not(.no-js) .fadein {
   pointer-events: none;
   opacity: 0;
-  transition: 3000ms opacity ease-out;
+  transition: 2000ms opacity ease-out;
 }
 
 html:not(.no-js) .fadein.visible {
@@ -373,17 +376,17 @@ html:not(.no-js) .fadein.visible {
  * ========================================================================== */
 #filter {
   height: 80px;
-  background-color: 202020;
-  border-bottom: solid 4px #303030;
+  background-color: #202020;
 }
 #filter__btn {
   margin-left: 15px;
   font-size: 25px;
-  line-height: 70px;
+  line-height: 80px;
   color: white;
   cursor: pointer;
   background-color: transparent;
   border: 0;
+  height: 65px;
   outline: none;
 }
 #filter__menu {
@@ -414,6 +417,7 @@ html:not(.no-js) .fadein.visible {
 @media screen and (min-width: 1000px) {
   #filter {
     height: 65px;
+    border-radius: 10px 10px 0 0;
   }
   #filter__btn {
     font-size: 13px;
@@ -437,23 +441,74 @@ html:not(.no-js) .fadein.visible {
   }
 }
 
-@media screen and (min-width: 1000px) {
-  #header p,
-h2 {
-    font-size: 110%;
-  }
+#feedbcakbtn {
+  float: right;
 }
+#feedbcakbtn a {
+  text-decoration: none;
+}
+
+#feedbcakbtn a div {
+  display: flex;
+  height: 100%;
+}
+
+#feedbcakbtn > a > div > svg {
+  height: 65px;
+  width: 65px;
+}
+
+#feedbcakbtn p {
+  margin: 0;
+  color: #fff;
+  align-self: center;
+}
+
+/* =============================================================================
+ * ヘッダー
+ * ========================================================================== */
 
 #header {
-    font-size: 130%;
+  color: #fff;
+  font-size: 130%;
+  margin-bottom: 20px;
 }
-
 @media screen and (min-width: 1000px) {
   #header {
+    height: 220px;
     font-size: 100%;
+    margin-top: 20px;
+    margin-bottom: 0;
   }
 }
 
+#header p {
+  font-weight: bold;
+  text-align: center;
+}
+@media screen and (min-width: 1000px) {
+  #header p {
+      font-size: 110%;
+    }
+}
+
+.skipbutton {
+  position: absolute;
+  top: 0%;
+  right: 0%;
+  color: #fff;
+  cursor: pointer;
+  background: transparent;
+  border: 0;
+  outline: none;
+  opacity: 50%;
+}
+
+/* =============================================================================
+ * メイン
+ * ========================================================================== */
+
+ /*全体設定*/
 #ind {
     font-size: 30px;
 }
@@ -462,24 +517,116 @@ h2 {
     font-size: 16px;
   }
 }
-#header p {
-  font-weight: bold;
-  text-align: center;
+
+/*エリア全体*/
+.bord {
+  width: 95%;
+  margin-left: 2.5%;
+  background-color: #181818;
+  height: calc(100vh - 321px);
 }
 
-#footer h2 {
-  font-size:70px;
-}
 @media screen and (min-width: 1000px) {
-  #footer h2 {
-    font-size: 200%;
+  .bord {
+    width: 60%;
+    margin: auto;
+    border-radius: 10px;
+    height: calc(100vh - 301px);
   }
 }
 
+ /*チャットエリア*/
 .chat {
+  height: calc(100% - 400px);
   padding: 0 20px;
+  overflow-y: scroll;
 }
 
+@media screen and (min-width: 1000px) {
+  .chat {
+    height: calc(100% - 199px);
+  }
+}
+
+ /*スクロールバー*/
+.chat::-webkit-scrollbar {
+  content: "";
+}
+.chat::-webkit-scrollbar-thumb {
+  min-height: 30px;
+  background-color: #333;
+  border: 2px solid #0f0f0f;
+}
+.chat::-webkit-scrollbar-track {
+  background-color: #000;
+}
+
+ /*入力欄*/
+#input {
+  height: 320px;
+  padding: 16px 32px;
+}
+@media screen and (min-width: 1000px) {
+  #input {
+    height: 135px;
+  }
+}
+#input > div:nth-of-type(1) {
+  height: auto;
+  display: flex;
+}
+@media screen and (min-width: 1000px) {
+  #input > div:nth-of-type(1) {
+    height: 72px;
+  }
+}
+#input > div:nth-of-type(2) {
+  height: 40px;
+  display: flex;
+  justify-content: end;
+}
+#input > div:nth-of-type(2) p {
+  margin: 0;
+  color: #bdbdbd;
+  align-self: center;
+}
+#input > div > img {
+  width: 32px;
+  height: 32px;
+  margin-right: 15px;
+  border-radius: 32px;
+}
+#input > div:nth-of-type(1) > div {
+  width: 100%;
+  color: #bdbdbd;
+  height: 100%;
+}
+#input > div > div > div {
+  height: auto;
+}
+@media screen and (min-width: 1000px) {
+  #input > div > div > div {
+    height: 24px;
+  }
+}
+#input > div > div > div:nth-of-type(2) {
+  height: auto;
+}
+@media screen and (min-width: 1000px) {
+  #input > div > div > div:nth-of-type(2) {
+    height: 48px;
+  }
+}
+#input > div > div > div:nth-of-type(2) {
+  border-bottom: solid #666666 2px;
+}
+
+#input > div > div > a > svg {
+  height: 40px;
+  width: 40px;
+}
+
+/*チャット表示*/
 .T {
   margin: 20px auto 25px;
   background-color: #1565c0;
@@ -530,31 +677,17 @@ h2 {
   }
 }
 
+/*日本語メッセージ*/
 .ja_t {
-  margin-top: 50px;
   margin-bottom: 0;
   text-align: center;
   font-size: 50px;
 }
 @media screen and (min-width: 1000px) {
   .ja_t {
-    margin-top: 50px;
     margin-bottom: 0;
     text-align: center;
     font-size: 2em;
-  }
-}
-
-.en_t {
-  margin-top: 0;
-  margin-bottom: 0;
-  font-size: 25px;
-}
-@media screen and (min-width: 1000px) {
-  .en_t {
-    margin-top: 0;
-    margin-bottom: 0;
-    font-size: 22px;
   }
 }
 
@@ -565,9 +698,23 @@ h2 {
 }
 @media screen and (min-width: 1000px) {
   .ja {
-    margin-top: 20px;
+    margin-top: 10px;
     margin-bottom: 0;
     font-size: 20px;
+  }
+}
+
+/*英語メッセージ*/
+.en_t {
+  margin-top: 0;
+  margin-bottom: 0;
+  font-size: 25px;
+}
+@media screen and (min-width: 1000px) {
+  .en_t {
+    margin-top: 0;
+    margin-bottom: 0;
+    font-size: 22px;
   }
 }
 
@@ -584,25 +731,31 @@ h2 {
   }
 }
 
-.bord {
-  width: 95%;
-  margin-top: 40px;
-  margin-left: 2.5%;
-  background-color: #181818;
-  border: solid 4px #303030;
+/*ユーザー名*/
+.User {
+  display: block;
+  height: 45px;
+  margin: 0 auto;
+  text-align: left;
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
 }
-
 @media screen and (min-width: 1000px) {
-  .bord {
-    width: 60%;
-    margin-left: 20%;
+  .User {
+    display: block;
+    height: 35px;
+    margin: 0 auto;
+    text-align: left;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
   }
 }
-.logo {
-  width: 50px;
-  margin: 0 0 0 20px;
+
+.Username {
+  margin-top: 0;
 }
 
+/*メッセージ本体*/
 .Text {
   height: 30px;
   height: auto;
@@ -628,27 +781,9 @@ h2 {
   }
 }
 
-.User {
-  display: block;
-  height: 45px;
-  margin: 0 auto;
-  text-align: left;
-  border-top-left-radius: 8px;
-  border-top-right-radius: 8px;
-}
-@media screen and (min-width: 1000px) {
-  .User {
-    display: block;
-    height: 35px;
-    margin: 0 auto;
-    text-align: left;
-    border-top-left-radius: 8px;
-    border-top-right-radius: 8px;
-  }
-}
-
-.Username {
-  margin-top: 0;
+.TL {
+  color: black;
+  text-decoration: none;
 }
 
 .TL p {
@@ -664,94 +799,7 @@ h2 {
   }
 }
 
-.TL {
-  color: black;
-  text-decoration: none;
-}
-
-.skipbutton {
-  position: absolute;
-  top: 0%;
-  right: 0%;
-  cursor: pointer;
-  background: transparent;
-  border: 0;
-  outline: none;
-  opacity: 50%;
-}
-
-.feedbackbtn {
-  background-color: white;
-  position:fixed;
-  bottom: 5px;
-  right: 5px;
-  cursor: pointer;
-  border: solid;
-  color: black;
-  text-decoration: none;
-  width: 95%;
-}
-
-@media screen and (min-width: 1000px) {
-  .feedbackbtn {
-    position:fixed;
-    bottom: 5px;
-    right: 5px;
-    cursor: pointer;
-    background: transparent;
-    border: none;
-    width: 18%;
-  }
-}
-
-.fbb_p {
-  margin: 5;
-  font-size: 30px;
-}
-
-@media screen and (min-width: 1000px) {
-  .fbb_p {
-    font-size: 16px;
-  }
-}
-
-.postpagebtn {
-  background-color: white;
-  position:fixed;
-  bottom: 130px;
-  right: 5px;
-  cursor: pointer;
-  border: solid;
-  color: black;
-  text-decoration: none;
-  margin-bottom: 10px;
-  width: 95%;
-}
-
-@media screen and (min-width: 1000px) {
-  .postpagebtn {
-    position:fixed;
-    bottom: 100px;
-    right: 5px;
-    cursor: pointer;
-    background: transparent;
-    border: none;
-    width: 18%;
-    margin-bottom: 10px;
-  }
-}
-
-.ppb_p {
-  margin: 5;
-  font-size: 30px;
-}
-
-@media screen and (min-width: 1000px) {
-  .ppb_p {
-    font-size: 16px;
-  }
-}
-
+/*スーパーチャット関連設定*/
 .lightblue_t {
   background-color: #00b8d4;
 }
@@ -805,68 +853,106 @@ h2 {
   color: white;
 }
 
-#kiryukai {
-  margin-bottom: 0;
-  text-align: center;
+/* =============================================================================
+ * フッター
+ * ========================================================================== */
+
+footer {
+  width: 95%;
+  color: #fff;
+  height: 60px;
+  margin: auto;
+  display: flex;
+  font-size: 130%;
+  justify-content: space-between;
+}
+@media screen and (min-width: 1000px) {
+  footer {
+    width: 60%;
+    font-size: 100%;
+  }
+}
+
+footer p {
+  margin: 0;
+  align-self: center;
+  font-weight: bold;
+  font-size: 1.4em;
+}
+
+footer span {
+  align-self: center;
+}
+
+#credit_btn {
+  border: none;
+  color: #fff;
+  cursor: pointer;
+  text-decoration: underline;
+  background-color: transparent;
+}
+
+#background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  opacity: .5;
+  height: 100vh;
+  z-index: 998; 
+  background-color: gray;
+}
+
+#copyright_box {
+  display: none;
 }
 
 #copyright {
-  width: 400px;
-  font-size: 25px;
-  margin: 0 auto;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 90%;
+  z-index: 999;
+  padding: 20px;
+  font-size: 150%;
   text-align: center;
+  border-radius: 10px;
+  background-color: #fff;
+  border: 2px solid black;
+  transform: translate(-50%, -50%);
 }
 @media screen and (min-width: 1000px) {
   #copyright {
-    width: 220px;
-    font-size: 16px;
+    font-size: 100%;
+    max-width: 400px;
   }
 }
 
-#a {
-  float: left;
-}
-#a a {
-  display: block;
-  margin-top: 30px;
-}
-@media screen and (min-width: 1000px) {
-  #a a {
-    margin-top: 15px;
-  }
+#copyright a {
+  color: black;
 }
 
-#c {
-  float: right;
-}
-#c a {
-  display: block;
-  margin-bottom: 20px;
-}
-@media screen and (min-width: 1000px) {
-  #c a {
-    margin-bottom: 5px;
-  }
+.title {
+  font-size: 1.4em;
+  font-weight: bold;
 }
 
-#k {
-  float: left;
-  margin: 20 0 300 auto;
-  width: 400px;
+.subtitle {
+  margin: 1.2em 0 .4em 0;
 }
-#k a {
-  display: block;
-  margin-bottom: 20px;
+
+.name {
+  margin: 0;
+  margin-right: .5em;
 }
-@media screen and (min-width: 1000px) {
-  #k {
-    margin: 20 auto;
-    width: 220px;
-  }
-}
-@media screen and (min-width: 1000px) {
-  #k a {
-    margin-bottom: 5px;
-  }
+
+#close {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  border: none;
+  font-size: 1.2em;
+  cursor: pointer;
+  background-color: #fff;
 }
 /*# sourceMappingURL=index.css.map */
